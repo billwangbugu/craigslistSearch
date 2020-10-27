@@ -1,0 +1,8 @@
+<section class="searchSection" fxLayout fxLayoutAlign="center">
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="search craigslist" aria-label="search" [(value)]="searchQuery">
+    </mat-form-field>
+    <button mat-flat-button color="primary" (click)="search()">Search</button>
+  </form>
+</section>
