@@ -21,4 +21,7 @@ export class SearchComponent implements OnInit {
     this.searchService.searchResult(this.searchQuery).subscribe(res=>{ console.log(res)})
     this.router.navigate(['/result']);
   }
+  onKey(event: any) { // without type info
+    this.searchQuery = event.target.value ;
+  }
 }
